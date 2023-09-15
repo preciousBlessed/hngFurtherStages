@@ -3,6 +3,7 @@
 ## Content
 
 - Introduction
+- UML Link
 - UML Documentation
 - Request/Response Formats
 - Setup Instructions
@@ -13,6 +14,10 @@
 ## Introduction
 
 This is a simple CRUD API implementation with nodejs and express. It is intended to serve as the second stage task for the HNG X internship program. This is basically a REST API capable of CRUD operations on a "person" resource, interfacing with the MongoDB (whether local or on MongoBD Atlas). This API can dynamically handle parameters, such as adding or retrieving a person by name. The development is accompanied with a simple UML diagram to represent your system's design and database structure.
+
+## UML Link
+
+Visit My uml [link](https://lucid.app/lucidchart/ab8531f0-da4a-4263-bef8-773051835463/edit?viewport_loc=123%2C33%2C1098%2C538%2C0_0&invitationId=inv_a8f71a70-9867-4a2c-bdaa-a5c183d4cbba) to view the ERD. It may require you to create an account. Just follow the actions to get access to viewing the file.
 
 ## Request and Response Formats
 
@@ -45,20 +50,20 @@ The application starts running and listening on the port defined in `process.env
 Once the application is running, you can perform CRUD operations with `Postman` or `RestClient` in `VisualStudio Code`. The User Schema has the following details
 ```
 {
-"fullName" : { type: String, required: true},
-"country": { type: String, required: true},
-"email" : { type: String, required: true, lowercase: true},
-"age" : { type: Number, required: true}
+  "fullName" : { type: String, required: true},
+  "country": { type: String, required: true},
+  "email" : { type: String, required: true, lowercase: true},
+  "age" : { type: Number, required: true}
 }
 ```
 ### Create A User
 With the app running, open `Postman` and create a `POST` request to `localhost:port/api`. Set the request body to `JSON` and create a user as follows:
 ```
 {
-"fullName" : "Mark Essien",
-"country" : "AnyCountry",
-"email" : "chooseAnyEmail@host.domain",
-"age" : 33
+  "fullName" : "Mark Essien",
+  "country" : "AnyCountry",
+  "email" : "chooseAnyEmail@host.domain",
+  "age" : 33
 }
 ```
 Send the request and if the user is successful created, you will get a response showing the status and user created.
@@ -71,7 +76,7 @@ On `Postman`, send a request to `localhost:port/api/_id_of_mark_essien` and you 
 The Second way is to send a `GET` request to `localhost:port/api` without specifying any `user_id` but in the request body, you can specify:
 ```
 {
-"fullName" : "Mark Essien"
+  "fullName" : "Mark Essien"
 }
 ```
 This will query the database for the details of the user with this name.
@@ -83,8 +88,8 @@ PATCH http:localhost:4001/api/1226883929201bdc77 HTTP/1.1
 Content-Type : application/json
 
 {
-"country" : "Cote de Voir",
-"age" : 39
+  "country" : "Cote de Voir",
+  "age" : 39
 }
 ```
 `Mark Essien's` details will be updated  and you will get a response `JSON` object.
@@ -98,7 +103,9 @@ Here, you send a `DELETE` request to `localhost:port/api/user_id` to delete a us
 - `nodemon`
 - `body-parser`
 - `mongoose`
+- `express-mongo-sanitize`
+- `perfect-express-sanitizer`
 
 ## Contributors
 @ Precious Chukwuezi, 2023
-
+[Move back up!](doc:linking-to-pages#My-CRUD-API-HNG-Internship-Version)
