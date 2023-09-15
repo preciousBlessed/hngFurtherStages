@@ -1,0 +1,35 @@
+GET http://localhost:4001
+
+###
+GET http://localhost:4001/api
+
+###
+GET http://localhost:4001/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "fullName":"Marvel bLESSED"
+}
+
+###
+POST http://localhost:4001/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "fullName" : "Mark eSSIEN",
+    "country": "Ivory coast",
+    "age":33,
+    "email": "ivoryCoast@ivory.com"
+}
+###
+PUT http://localhost:4001/api/6504444b972c40a07eb3f77a HTTP/1.1
+Content-Type: application/json
+
+{
+    "fullName" : "Precious Blessed"
+}
+
+###
+DELETE http://localhost:4001/api/5044356972c40a07eb3f772 HTTP/1.1
+
+
