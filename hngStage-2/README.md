@@ -65,7 +65,7 @@ Send the request and if the user is successful created, you will get a response 
 You can create as many users as you wish!
 
 ### Read A User
-There are two ways we can read a user in this API. Firstly, by sending a `GET` request to `localhost:port/api/:user_id`. 
+There are two ways we can read a user in this API. Firstly, by sending a `GET` request to `localhost:port/api/user_id`. 
 On `Postman`, send a request to `localhost:port/api/_id_of_mark_essien` and you will successfully fetch the details of User `Mark Essien`.
 
 The Second way is to send a `GET` request to `localhost:port/api` without specifying any `user_id` but in the request body, you can specify:
@@ -92,4 +92,13 @@ Content-Type : application/json
 ### Delete A User
 Here, you send a `DELETE` request to `localhost:port/api/user_id` to delete a user.
 
+## Major Packages
+- `dotenv`
+- `express`
+- `nodemon`
+- `body-parser`
+- `mongoose`
+
+## Contributors
+@ Precious Chukwuezi, 2023
 
