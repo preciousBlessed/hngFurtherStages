@@ -33,7 +33,7 @@ app.use(
 
 //ROUTING
 app.get("/", (req, res) => {
-  res.send("<h1>Hello Curd Node Express </h1>");
+  res.send("<h1>Hello Curd Node Express </h1>\n<p>Now visit the /api route of this endpoint to perform CRUD actions on users!</p>");
 });
 
 app.use("/api", userRoutes);
@@ -46,5 +46,3 @@ app.listen(port, (err) => {
   console.log(`Server is now listening on port ${port}`);
 });
 
-// mongodb+srv://blessedtobe30:<password>@cluster0.6bkonmc.mongodb.net/
-// mongodb+srv://blessedtobe30:<password>@cluster0.6bkonmc.mongodb.net/
