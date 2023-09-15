@@ -1,4 +1,4 @@
-# My CRUD API HNG-Internship Version
+# My CRUD API HNG Internship Version
 
 ## Content
 
@@ -108,4 +108,4 @@ Here, you send a `DELETE` request to `localhost:port/api/user_id` to delete a us
 
 ## Contributors
 @ Precious Chukwuezi, 2023
-[Move back up!](doc:linking-to-pages#My-CRUD-API-HNG-Internship-Version)
+[Move back up](doc:linking-to-pages#my-crud-api-hng-internship-version)
